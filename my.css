@@ -1,0 +1,117 @@
+body{
+    background-color: aqua;
+    margin: 0;
+}
+.containers{
+    display: flex;
+    gap: 40px;
+    margin: 400px;
+    padding: 50px;
+    height: 200px;
+}
+
+#modalTogle1{
+    display: none;
+}
+.open-modal1{
+    background-color: darkgoldenrod;
+    border-radius: 12px;
+    width: 200px;
+    height: 300px;
+    cursor: pointer;
+    border: solid 3px;
+    font-size: x-large;
+}
+.modal{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+}
+#modalTogle1:checked +.open-modal1 +.modal{
+    display: block;
+}
+
+#modalTogle{
+    display: none;
+}
+.open-modal{
+    background-color: blue;
+    border-radius: 12px;
+    width: 200px;
+    height: 300px;
+    cursor: pointer;
+    font-size: x-large;
+    border: solid 3px;
+}
+.modal{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+}
+#modalTogle:checked +.open-modal +.modal{
+    display: block;
+}
+#modalTogle2{
+    display: none;
+}
+.open-modal2{
+    background-color: green;
+    border-radius: 12px;
+    width: 200px;
+    height: 300px;
+    cursor: pointer;
+    font-size: x-large;
+    border: solid 3px;
+}
+.modal{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+}
+#modalTogle2:checked +.open-modal2 +.modal{
+    display: block;
+}
+
+
